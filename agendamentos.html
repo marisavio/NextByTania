@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinica da Doutora Tânia</title>
+  <link rel="stylesheet" href="styles/agendamentos.css">
+  <script src="scriptAgendamentos.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="home" class="navbar">
+    <a href="index.html"><img src="images/logo.png" alt="Doutora Tânia" style="margin: 20px;" width="200"></a>
+    <ul class="navbar-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="login.html" style="
+        border-radius: 20px; 
+        background-color: #788867;
+        padding: 10px 20px;
+      ">LOGIN</a></li>
+    </ul>
+  </div>
+
+  <div class="login-usuario">
+    <div class="content-clinic">
+      <h1 style="font-weight: 500; color: black;text-align: center;">AGENDAMENTO</h1>
+      <div style="border-radius: 20px; width: 120px; height: 6px; background-color: #94A97E; margin: 10px auto; margin-bottom: 20px;"></div>
+      
+      <form>
+        <div class="botoespm">
+          <div class="pm-input-container">
+            <p class="pm-input-text">Nome</p>
+            <input class="pm-input" type="text">
+        </div>
+          
+        <div class="pm-input-container">
+            <p class="pm-input-text">Medico</p>
+            <select class="pm-input" name="medico" id="medico">
+                <option value="" hidden disabled selected>Select your option</option>
+                <option value="Dratania">Dra. Tania</option>
+                <option value="Drmarcos">Dr. Marcos Zanin</option>
+                <option value="Drapaula">Dra. Paula Melo</option>
+            </select> 
+        </div>
+
+        <div class="pm-input-container">
+            <p class="pm-input-text">Tratamento</p>
+            <select class="pm-input" name="Tratamento" id="Tratamento">
+                <option value="" hidden disabled selected>Select your option</option>
+                <option value="BP">Botox e preenchimento facial</option>
+                <option value="LF">Laser facial</option>
+                <option value="FS">Fios de sustentacao</option>
+                <option value="Micro">Microagulhamento</option>
+                <option value="Estrias">Estrias</option>
+                <option value="DP">Depilacao a laser</option>
+                <option value="DL">Drenagem linfatica</option>
+                <option value="RF">Radiofrequencia</option>
+                <option value="Calv">Alopecia Androgentica (Calvice)</option>
+                <option value="Queda">Efluvio Telogeno (Queda Capilar)</option>
+                <option value="TC">Terapia Capilar</option>
+            </select> 
+        </div>
+        <div class="pm-input-container">
+            <p class="pm-input-text">Data</p>
+            <input class="pm-input" type="date">
+        </div>
+        <div class="pm-input-container">
+            <p class="pm-input-text">Horario</p>
+            <input class="pm-input" type="time" min="10:00" max="20:00" required>
+        </div>
+          <input type="button" class="button" id="btn-finalize" value="FINALIZAR">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="finalized-modal" class="modal">
+    <div class="modal-content">
+        <h1 style="font-weight: 500;">Agendado com Sucesso</h1>
+        <a href="index.html" class="button">Home</a>
+    </div>
+  </div>
+
+  <div class="navbarbaixo">
+    <p style="color: white;">2024 @ NEXT BY TANIA</p>
+  </div>
+
+</body>
+</html>

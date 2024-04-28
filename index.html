@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clinica da Doutora Tânia</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/index.css">
   <script src="script.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +17,11 @@
   <div id="home" class="navbar">
     <img id="home-button"src="images/logo.png" alt="Doutora Tânia" style="margin: 20px;" width="200">
     <ul class="navbar-menu">
-      <li><a id="home-button">HOME</a></li>
+      <li><a id="home-button2">HOME</a></li>
       <li><a href="#clinica">CLÍNICA</a></li>
       <li><a href="#equipe-div">EQUIPE</a></li>
       <li><a href="#contact-div">CONTATO</a></li>
-      <li><a href="#login-div" style="
+      <li><a href="login.html" style="
         border-radius: 20px; 
         background-color: #788867;
         padding: 10px 20px;
@@ -36,7 +36,7 @@
       <p style="font-size: 22px; font-weight: 400; width: 90%;"> Somos referência em cuidado da pele, nossa equipe é composta por experientes dermatologistas que zelam por proporcionar um atendimento personalizado e oferecendo a você os tratamentos mais avançados e eficazes.</p>
       <br><br>
       <div style="width: 90%; display: flex; justify-content: center;">
-        <a href="#" class="button">TRATAMENTO <i style="padding-left: 10px;" class="material-icons">touch_app</i></a>
+        <a href="#treatment" class="button">TRATAMENTO <i style="padding-left: 10px;" class="material-icons">touch_app</i></a>
       </div>
     </div>
     <div class="doctor-intro">
@@ -48,7 +48,7 @@
     <div class="content-clinic">
       <h1 style="font-weight: 500;">CLÍNICA</h1>
       <div class="icone"></div>
-      <div style="border-radius: 20px; background-color: #94A97E; padding: 30px; box-sizing: border-box;">
+      <div style="border-radius: 20px; background-color: #B6C398; padding: 30px; box-sizing: border-box;">
         <p style="color: white; font-size: 22px; font-weight: 400;">
           A clínica Next by Tania é um espaço onde todos os detalhes foram pensados para promover saúde, 
           beleza e bem estar. Ao longo da nossa experiência como profissionais cuidando de pessoas pudemos 
@@ -64,25 +64,25 @@
     </div>
   </div>
 
-  <div class="container-clinic" style="background-color: #B6C398;">
-    <div  class="content-clinic">
+  <div id="treatment" class="container-clinic" style="background-color: #B6C398;">
+    <div class="content-clinic">
       <h1 style="font-weight: 500;">TRATAMENTOS</h1>
       <div class="icone"></div>
       <div style="margin: 30px; display: flex; justify-content: space-between;">
         <div class="tratamento-container">
           <img src="images/woman-skin.png" width="100%" height="70%" style="border-radius: 80px;">
           <h2 style="color: white; font-weight: 500; padding: 10px; padding-bottom: 25px;">Tratamento Facial</h2>
-          <a href="#" class="button-tratamento">Sabia Mais</a>
+          <a id="btn-facial-modal" class="button-tratamento">Saiba Mais</a>
         </div>
         <div class="tratamento-container">
           <img src="images/dermato.jpg" width="100%" height="70%" style="border-radius: 80px;">
           <h2 style="color: white; font-weight: 500; padding: 10px; padding-bottom: 25px;">Tratamento Corporal</h2>
-          <a href="#" class="button-tratamento">Sabia Mais</a>
+          <a id="btn-body-modal" class="button-tratamento">Saiba Mais</a>
         </div>
         <div class="tratamento-container">
           <img src="images/capilar.jpg" width="100%" height="70%" style="border-radius: 80px;">
           <h2 style="color: white; font-weight: 500; padding: 10px; padding-bottom: 25px;">Tratamento Capilar</h2>
-          <a href="#" class="button-tratamento">Sabia Mais</a>
+          <a id="btn-hair-modal" class="button-tratamento">Saiba Mais</a>
         </div>
       </div>
     </div>
@@ -116,24 +116,153 @@
     <div class="content-clinic" >
       <h1 style="font-weight: 500;">CONTATO</h1>
       <div class="icone"></div>
-      <div style="border-radius: 20px; width: 800px; height: 400px; background-color: #B6C398; margin: 10px auto; margin-bottom: 20px;">
-        <div class="contato">
-          <div class="contato-container"> 
-            <h1 style="font-weight: 600">AGENDE SUA CONSULTA</h1>
-            <h2 style="font-weight: 200">Entre em contato conosco para agendar sua consulta e garantir a sua saúde!</h2>
-            <h3 style="font-weight: 100">(11) 3739-3972</h3>
-            <h3 style="font-weight: 100">(11) 99786-5404</h3>
-            <h3 style="font-weight: 100">XXXXXX</h3>
+      <div style="margin-bottom: 50px; border-radius: 20px; background-color: #94A97E; padding: 30px; box-sizing: border-box; display: flex; flex-direction: row;">
+        <div class="contato-container"> 
+          <h1 style="font-weight: 600">AGENDE SUA CONSULTA</h1>
+          <h2 style="font-weight: 200; width: 70%; align-self: center;">Entre em contato conosco para agendar sua consulta e garantir a sua saúde!</h2>
+          <div class="contact-info">
+            <i style="padding-right: 10px;" class="material-icons">call</i>
+            <h3 style="font-weight: 300; font-size: 20px;">(11) 3739-3972</h3>
           </div>
-          <div class="mapacont">
-            <img src="images/map.png" style="width: 100%; height: 50%; border-radius: 20%;">
+          <div class="contact-info">
+            <i style="padding-right: 10px;" class="material-icons">smartphone</i>
+            <h3 style="font-weight: 300; font-size: 20px;">(11) 99786-5404</h3>
           </div>
+          <div class="contact-info">
+            <i style="padding-right: 10px;" class="material-icons">location_on</i>
+            <h3 style="font-weight: 300; font-size: 20px;">Alameda Gabriel Monteiro da Silva, 1500 - SP</h3>
+          </div>
+        </div>
+        <div class="mapacont">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8899099800356!2d-46.68460242301584!3d-23.572397078792374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5770445835c5%3A0xbdb1b4c54cb9d477!2sAlameda%20Gabriel%20Monteiro%20da%20Silva%2C%201500%20-%20Jardim%20America%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001442-002!5e0!3m2!1sen!2sbr!4v1714249021336!5m2!1sen!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="facial-modal" class="modal">
+    <div class="modal-content">
+      <span class="close closeFacial">&times;</span>
+      <div id="clinica" class="container-clinic">
+        <div class="content-clinic">
+          <h1 style="font-weight: 500;">TRATAMENTO FACIAL</h1>
+          <div class="icone"></div>
+          <div style="border-radius: 20px; background-color: #B6C398; padding: 30px; box-sizing: border-box;">
+            <p style="color: white; font-size: 22px; font-weight: 400;">
+              Em nossa clínica dermatológica, cada tratamento facial é uma jornada única, personalizada para atender às necessidades
+              individuais da sua pele. Com uma combinação de tecnologia avançada, técnicas inovadoras e um profundo entendimento das
+              complexidades dermatológicas, oferecemos um espectro completo de serviços para revitalizar, rejuvenescer e restaurar
+              o esplendor natural da sua pele. Desde limpezas profundas e peelings químicos, até terapias de luz e tratamentos a 
+              laser, cada passo é meticulosamente projetado para garantir o máximo de eficácia e segurança. Junte-se a nós para 
+              descobrir como nossos tratamentos podem transformar sua pele, promovendo não apenas beleza, mas também saúde e 
+              bem-estar duradouros.
+            </p>
+          </div>
+          <div style="margin: 30px; display: flex; justify-content: space-between;">
+            <div style="width: 20%;">
+              <img src="images/aplicação-botox.jpg" width="100%" style="aspect-ratio: 1; border-radius: 10px;">
+              <h2 style="color: black; font-weight: 500; padding: 10px;">BOTOX E PREENCHIMENTO</h2>
+            </div>
+            <div style="width: 20%;">
+              <img src="images/laser-facial.jpg" width="100%" style="aspect-ratio: 1; object-fit: cover; border-radius: 10px;">
+              <h2 style="color: black; font-weight: 500; padding: 10px;">LASER FACIAL</h2>
+            </div>
+            <div style="width: 20%;">
+              <img src="images/fiosdesustentacao.webp" width="100%" style="aspect-ratio: 1; object-fit: cover; border-radius: 10px;">
+              <h2 style="color: black; font-weight: 500; padding: 10px;">FIOS DE SUSTENTAÇÃO </h2>
+            </div>
+            <div style="width: 20%;">
+              <img src="images/microagulhamento.jpg" width="100%" style="aspect-ratio: 1; object-fit: cover; border-radius: 10px;">
+              <h2 style="color: black; font-weight: 500; padding: 10px;">MICROAGULHAMENTO </h2>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="body-modal" class="modal">
+    <div class="modal-content">
+      <span class="close closeBody">&times;</span>
+      <div id="clinica" class="container-clinic">
+        <div class="content-clinic">
+          <h1 style="font-weight: 500;">TRATAMENTO CORPORAL</h1>
+          <div class="icone"></div>
+          <div style="border-radius: 20px; background-color: #B6C398; padding: 30px; box-sizing: border-box;">
+            <p style="color: white; font-size: 22px; font-weight: 400;">
+              Em nossa clínica especializada, cada procedimento corporal é uma experiência singular, personalizada para atender às 
+              necessidades específicas do seu corpo. Utilizando uma combinação de tecnologia de ponta, técnicas avançadas e um 
+              profundo conhecimento das dinâmicas corporais, oferecemos uma ampla gama de serviços para esculpir, tonificar e 
+              melhorar o contorno corporal. Tratamentos com radiofrequência, até lipoaspiração não invasiva e terapias de modelagem 
+              corporal, cada etapa é cuidadosamente planejada para maximizar os resultados enquanto assegura a sua segurança e 
+              conforto. Convidamos você a explorar como nossos procedimentos podem revolucionar sua aparência, promovendo não só a 
+              estética, mas também o bem-estar e a confiança duradouros.
+
+            </p>
+          </div>
+          <div style="margin: 30px; display: flex; justify-content: space-between;">
+            <div style="width: 20%;">
+              <img src="images/estrias.jpg" width="100%" style="aspect-ratio: 1; border-radius: 10px;">
+              <h2 style="color: black; font-weight: 500; padding: 10px;">ESTRIAS</h2>
+            </div>
+            <div style="width: 20%;">
+              <img src="images/depilacaoalaser.png" width="100%" style="aspect-ratio: 1; object-fit: cover; border-radius: 10px;">
+              <h2 style="color: black; font-weight: 500; padding: 10px;">DEPILAÇÃO A LASER</h2>
+            </div>
+            <div style="width: 20%;">
+              <img src="images/drenagem.jpg" width="100%" style="aspect-ratio: 1; object-fit: cover; border-radius: 10px;">
+              <h2 style="color: black; font-weight: 500; padding: 10px;">DRENAGEM LINFATICO</h2>
+            </div>
+            <div style="width: 20%;">
+              <img src="images/radio.jpg" width="100%" style="aspect-ratio: 1; object-fit: cover; border-radius: 10px;">
+              <h2 style="color: black; font-weight: 500; padding: 10px;">RADIOFREQUENCIA </h2>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hair-modal" class="modal">
+    <div class="modal-content">
+      <span class="close closeHair">&times;</span>
+      <div id="clinica" class="container-clinic">
+        <div class="content-clinic">
+          <h1 style="font-weight: 500;">TRATAMENTO CAPILAR</h1>
+          <div class="icone"></div>
+          <div style="border-radius: 20px; background-color: #B6C398; padding: 30px; box-sizing: border-box;">
+            <p style="color: white; font-size: 22px; font-weight: 400;">
+              Em nossa clínica de excelência, cada tratamento capilar é uma jornada exclusiva, desenhada para atender às 
+              necessidades únicas do seu cabelo. Combinando tecnologia de última geração, técnicas refinadas e um entendimento 
+              profundo da saúde capilar, oferecemos uma variedade de serviços para revitalizar, fortalecer e restaurar a vitalidade
+              dos seus fios. Desde terapias de nutrição profunda, tratamentos com laser de baixo nível, até restaurações capilares
+              não invasivas, cada procedimento é meticulosamente planejado para otimizar os resultados enquanto garante seu 
+              conforto e segurança. Convidamos você a descobrir como nossos tratamentos podem transformar seu cabelo, promovendo
+              não apenas beleza, mas também saúde e confiança duradouras.
+            </p>
+          </div>
+          <div style="margin: 30px; display: flex; justify-content: space-between;">
+            <div style="width: 30%;">
+              <img src="images/calvicie-feminina.jpg" width="100%" style="aspect-ratio: 1; border-radius: 10px;">
+              <h2 style="color: black; font-weight: 500; padding: 10px;">ALOPECIA ANDROGÉNETICA (CALVÍCE)</h2>
+            </div>
+            <div style="width: 30%;">
+              <img src="images/efluvio-telogeno.jpg" width="100%" style="aspect-ratio: 1; object-fit: cover; border-radius: 10px;">
+              <h2 style="color: black; font-weight: 500; padding: 10px;">EFLÚVIO TELÓGENO (QUEDA CAPILAR)</h2>
+            </div>
+            <div style="width: 30%;">
+              <img src="images/terapiacapilar.jpg" width="100%" style="aspect-ratio: 1; object-fit: cover; border-radius: 10px;">
+              <h2 style="color: black; font-weight: 500; padding: 10px;">TERAPIA CAPILAR</h2>
+            </div>
+          </div>  
         </div>
       </div>
     </div>
   </div>
   
-  <div class="navbarbaixo"></div>
+  <div class="navbarbaixo">
+    <p style="color: white;">2024 @ NEXT BY TANIA</p>
+  </div>
 
 </body>
 </html>

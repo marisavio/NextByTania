@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinica da Doutora Tânia</title>
+  <link rel="stylesheet" href="styles/signup.css">
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="home" class="navbar">
+    <a href="index.html"><img src="images/logo.png" alt="Doutora Tânia" style="margin: 20px;" width="200"></a>
+    <ul class="navbar-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="login.html" style="
+        border-radius: 20px; 
+        background-color: #788867;
+        padding: 10px 20px;
+      ">LOGIN</a></li>
+    </ul>
+  </div>
+
+  <div class="login-usuario">
+    <div class="content-clinic">
+      <h1 style="font-weight: 500; color: black;text-align: center;">SIGNUP</h1>
+      <div style="border-radius: 20px; width: 120px; height: 6px; background-color: #94A97E; margin: 10px auto; margin-bottom: 20px;"></div>
+      
+      <form action="/login.html">
+        <div class="botoespm">
+          <div class="pm-input-container">
+            <p class="pm-input-text">Nome</p>
+            <input class="pm-input" type="text">
+          </div>
+          <div class="pm-input-container">
+            <p class="pm-input-text">Email</p>
+            <input class="pm-input" type="email">
+          </div>
+          <div class="pm-input-container">
+            <p class="pm-input-text">CPF</p>
+            <input class="pm-input" type="text">
+          </div>
+          <div class="pm-input-container">
+            <p class="pm-input-text">Senha</p>
+            <input class="pm-input" type="password">
+          </div>
+          <input class="input" id="toggle" type="checkbox">
+
+          <label class="label" for="toggle">
+            <div class="left">
+              Paciente
+            </div>
+
+            <div class="switch">
+              <span class="slider round"></span>
+            </div>
+
+            <div class="right">
+              Médico
+            </div>
+          </label>
+
+          <a href="login.html" style="color: white; font-size: 25px;">Conta Existente</a>
+        </div>
+
+        <div>
+          <input type="submit" class="button" value="Cadastrar">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="navbarbaixo">
+    <p style="color: white;">2024 @ NEXT BY TANIA</p>
+  </div>
+
+</body>
+</html>
