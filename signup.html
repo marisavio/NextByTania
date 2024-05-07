@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clinica da Doutora Tânia</title>
   <link rel="stylesheet" href="styles/signup.css">
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +31,7 @@
       <h1 style="font-weight: 500; color: black;text-align: center;">SIGNUP</h1>
       <div style="border-radius: 20px; width: 120px; height: 6px; background-color: #94A97E; margin: 10px auto; margin-bottom: 20px;"></div>
       
-      <form action="/login.html">
+      <form action="login.html">
         <div class="botoespm">
           <div class="pm-input-container">
             <p class="pm-input-text">Nome</p>
@@ -42,27 +42,25 @@
             <input class="pm-input" type="email">
           </div>
           <div class="pm-input-container">
-            <p class="pm-input-text">CPF</p>
+            <p class="pm-input-text" id="label-cpf-crm">CPF</p>
             <input class="pm-input" type="text">
           </div>
           <div class="pm-input-container">
             <p class="pm-input-text">Senha</p>
             <input class="pm-input" type="password">
           </div>
+
           <input class="input" id="toggle" type="checkbox">
-
           <label class="label" for="toggle">
-            <div class="left">
-              Paciente
-            </div>
-
-            <div class="switch">
-              <span class="slider round"></span>
-            </div>
-
-            <div class="right">
-              Médico
-            </div>
+              <div class="left">
+                  Paciente
+              </div>
+              <div class="switch">
+                  <span class="slider round"></span>
+              </div>
+              <div class="right">
+                  Médico
+              </div>
           </label>
 
           <a href="login.html" style="color: white; font-size: 25px;">Conta Existente</a>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinica da Doutora Tânia</title>
+  <link rel="stylesheet" href="styles/agendamentosmedico.css">
+  <script src="js/scriptAgendamentos.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="home" class="navbar">
+    <a href="index.html"><img src="images/logo.png" alt="Doutora Tânia" style="margin: 20px;" width="200"></a>
+    <ul class="navbar-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="login.html" style="
+        border-radius: 20px; 
+        background-color: #788867;
+        padding: 10px 20px;
+      ">LOGIN</a></li>
+    </ul>
+  </div>
+
+  <div class="login-usuario">
+    <div class="content-clinic">
+      <h1 style="font-weight: 500; color: black;text-align: center;">AGENDA</h1>
+      <div style="border-radius: 20px; width: 120px; height: 6px; background-color: #94A97E; margin: 10px auto; margin-bottom: 20px;"></div>
+      
+
+      <form>
+        <div class="botoespm">
+            <div style="font-weight: 600; color: black;text-align: center;font-size: 30px;">PACIENTES AGENDADOS</div>
+            <div style="color: black;text-align: center;font-size: 30px;margin-top: 20px;">18/05/2024</div>
+            <div class="container">
+                <div class="infostit">
+                    <p class="fontinfos">Nome</p>
+                </div>
+                <div class="infostit">
+                    <p class="fontinfos">Horário</p>
+                </div>
+                <div class="infostit">
+                    <p class="fontinfos">Tratamento</p>
+                </div>
+                <div class="infostit">
+                  <p class="fontinfos">Sala de atendimento</p>
+              </div>
+            </div>
+
+            <div class="container">
+                <div class="infos">
+                    <p class="fontinfos">Luciana Saad</p>
+                </div>
+                <div class="infos">
+                    <p class="fontinfos">11:00 Hrs </p>
+                </div>
+                <div class="infos">
+                    <p class="fontinfos">Botox</p>
+                </div>
+                <div class="infos">
+                  <p class="fontinfos">Sala 4</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="infos">
+                    <p class="fontinfos">Julia Lacerda</p>
+                </div>
+                <div class="infos">
+                    <p class="fontinfos">13:00 Hrs </p>
+                </div>
+                <div class="infos">
+                    <p class="fontinfos">Preenchimento facial</p>
+                </div>
+                <div class="infos">
+                  <p class="fontinfos">Sala 3</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+          <input type="button" class="button" id="btn-finalize" value="FINALIZAR">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="finalized-modal" class="modal">
+    <div class="modal-content">
+        <h1 style="font-weight: 500;">Agenda consultada com sucesso</h1>
+        <a href="index.html" class="button">Home</a>
+    </div>
+  </div>
+
+  <div class="navbarbaixo">
+    <p style="color: white;">2024 @ NEXT BY TANIA</p>
+  </div>
+
+</body>
+</html>

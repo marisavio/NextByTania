@@ -1,12 +1,10 @@
 body {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  margin: 0;
-  background-color: white;
-  padding-bottom: 60px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 0;
+    background-color: white; 
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -195,6 +193,60 @@ html {
     z-index: 100;
   
 }
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    height: 200px;
+  }
+  .infos{
+    flex: 1;
+    text-align: center;
+    background-color: #788867;
+    border-radius: 20px;
+    font-size: 50px;
+    margin: 10px;
+  }
+  
+  .fontinfos{
+    font-size: 20px;
+    font-weight: 30%;
+  }
+
+.container {
+    display: flex; 
+    justify-content: space-around;
+
+}
+.infostit{
+  flex: 1;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 50px;
+  margin: 10px;
+  font-weight: 300 ;
+}
+
 .button {
   margin: 5px;
   padding: 10px 20px;

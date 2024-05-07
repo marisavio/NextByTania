@@ -180,13 +180,21 @@ html {
     font-family: sans-serif;
   }
 
-  .navbarbaixo{
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    background-color: #94A97E; 
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+.navbarbaixo{
+  width: 100%;
+  height: 50px;
+  background-color: #94A97E; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 50px;
+}
+.button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #788867;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
