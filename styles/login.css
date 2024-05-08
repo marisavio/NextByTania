@@ -16,7 +16,7 @@
     background-color: rgba(102, 165, 69,0.2); 
     padding: 30px; 
     box-sizing: border-box;
-    margin: 50px;
+    margin: 20px;
 }
 
 .pm-input-container {
@@ -137,6 +137,5 @@
 
 .navbarbaixo{
   bottom: 0;
-  width: 100%;
-  position: fixed;
+  width: auto;
 }
