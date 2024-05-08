@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clinica da Doutora Tânia</title>
+  <link rel="stylesheet" href="styles/global.css">
   <link rel="stylesheet" href="styles/index.css">
   <script src="js/script.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,9 +23,10 @@
       <li><a href="#equipe-div">EQUIPE</a></li>
       <li><a href="#contact-div">CONTATO</a></li>
       <li><a href="login.html" style="
-        border-radius: 20px; 
-        background-color: #788867;
+        border-radius: 45px; 
+        background-color: rgb(102, 165, 69);
         padding: 10px 20px;
+        color: white;
       ">LOGIN</a></li>
     </ul>
   </div>
@@ -32,112 +34,129 @@
   <div class="hero">
     <div class="hero-info">
       <h1 style="font-size: 60px;">Cuidamos do exterior e transformamos o interior</h1>
-      <p style="font-size: 22px; font-weight: 400;">Bem vindos a Clínica da Doutora Tânia!</p>
-      <p style="font-size: 22px; font-weight: 400; width: 90%;"> Somos referência em cuidado da pele, nossa equipe é composta por experientes dermatologistas que zelam por proporcionar um atendimento personalizado e oferecendo a você os tratamentos mais avançados e eficazes.</p>
+      <p style="font-size: 22px; font-weight: 400; width: 90%;">Referência em cuidado da pele, oferecendo a você os tratamentos mais avançados e eficazes.</p>
       <br><br>
-      <div style="width: 90%; display: flex; justify-content: center;">
-        <a href="#treatment" class="button">TRATAMENTO <i style="padding-left: 10px;" class="material-icons">touch_app</i></a>
+      <div>
+        <a href="#treatment" class="hero-button">TRATAMENTO <i style="padding-left: 10px;" class="material-icons">touch_app</i></a>
       </div>
-    </div>
-    <div class="doctor-intro">
-      <img src="images/doctor.png" alt="Doutora Tânia">
     </div>
   </div>
 
   <div id="clinica" class="container-clinic">
     <div class="content-clinic">
-      <h1 style="font-weight: 500;">CLÍNICA</h1>
-      <div class="icone"></div>
-      <div style="border-radius: 20px; background-color: #B6C398; padding: 30px; box-sizing: border-box;">
-        <p style="color: white; font-size: 22px; font-weight: 400;">
+      <div style="width: 40%; padding: 30px;">
+        <img src="images/office-chair2.jpeg" >
+      </div>
+      <div style="width: 40%; padding: 30px;">
+        <h1 style="font-size: 20px; font-weight: 500; color: rgb(70, 70, 70);">Quem Somos</h1>
+        <div class="icone" style="align-self: flex-start;"></div>
+        <h2 style="font-size: 40px; font-weight: 500;">Clínica</h2>
+        <p style="color: rgb(36, 36, 36); font-size: 22px; font-weight: 200; line-height: 150%;">
           A clínica Next by Tania é um espaço onde todos os detalhes foram pensados para promover saúde, 
           beleza e bem estar. Ao longo da nossa experiência como profissionais cuidando de pessoas pudemos 
           observar como cuidar do exterior pode ser transformador para interior. Presenciar pacientes se 
           sentindo mais confiantes, mais seguros e mais felizes após nosso contato é uma grande motivação e nosso propósito.
         </p>
       </div>
-      <div style="margin: 30px; display: flex; justify-content: space-between;">
-        <img src="images/hero-background.png" width="30%" style="aspect-ratio: 1; border-radius: 10px;">
-        <img src="images/office-chair.jpeg" width="30%" style="aspect-ratio: 1; object-fit: cover; border-radius: 10px;">
-        <img src="images/office-chair2.jpeg" width="30%" style="aspect-ratio: 1; object-fit: cover; border-radius: 10px;">
-      </div>
     </div>
   </div>
 
-  <div id="treatment" class="container-clinic" style="background-color: #B6C398;">
+  <div id="treatment" class="container-clinic" style="background-color:rgba(102, 165, 69, 0.2)">
     <div class="content-clinic">
-      <h1 style="font-weight: 500;">TRATAMENTOS</h1>
-      <div class="icone"></div>
-      <div style="margin: 30px; display: flex; justify-content: space-between;">
-        <div class="tratamento-container">
-          <img src="images/woman-skin.png" width="100%" height="70%" style="border-radius: 80px;">
-          <h2 style="color: white; font-weight: 500; padding: 10px; padding-bottom: 25px;">Tratamento Facial</h2>
-          <a id="btn-facial-modal" class="button-tratamento">Saiba Mais</a>
+      <div style="display: flex; flex-direction: column;">
+        <div style="align-self: center; text-align: center; width: 80%;">
+          <h1 style="font-size: 20px; font-weight: 500; color: rgb(73, 117, 50); margin-bottom: 25px;">Infinitas Opcoes</h1>
+          <div class="icone" style="margin: auto; background-color: rgb(73, 117, 50);"></div>
+          <h2 style="font-size: 40px; font-weight: 500;">Tratamentos</h2>
+          <p style="font-size: 22px; font-weight: 200;">Proteja sua pele com check-ups anuais. A detecção precoce do câncer de pele pode salvar vidas, com taxas de sucesso superiores a 95%. Agende sua consulta e cuide de você!</p>
         </div>
-        <div class="tratamento-container">
-          <img src="images/dermato.jpg" width="100%" height="70%" style="border-radius: 80px;">
-          <h2 style="color: white; font-weight: 500; padding: 10px; padding-bottom: 25px;">Tratamento Corporal</h2>
-          <a id="btn-body-modal" class="button-tratamento">Saiba Mais</a>
-        </div>
-        <div class="tratamento-container">
-          <img src="images/capilar.jpg" width="100%" height="70%" style="border-radius: 80px;">
-          <h2 style="color: white; font-weight: 500; padding: 10px; padding-bottom: 25px;">Tratamento Capilar</h2>
-          <a id="btn-hair-modal" class="button-tratamento">Saiba Mais</a>
+        <div style="margin: 30px; display: flex; justify-content: space-between;">
+          <div class="tratamento-container">
+            <img src="images/woman-skin.png">
+            <h2 style="font-size: 22px; color: black; font-weight: 300; padding: 10px 10px 10px 0px;">Tratamento Facial</h2>
+            <h3 style="font-size: 20px; color: black; font-weight: 200; padding-bottom: 25px;">Cuidados com a pele para uma melhor autoestima</h3>
+            <a id="btn-facial-modal" class="button-tratamento">Saiba Mais</a>
+          </div>
+          <div class="tratamento-container">
+            <img src="images/dermato.jpg">
+            <h2 style="font-size: 22px; color: black; font-weight: 200; padding: 10px 10px 10px 0px;">Tratamento Corporal</h2>
+            <h3 style="font-size: 20px; color: black; font-weight: 200; padding-bottom: 25px;">Cuidados com a pele para uma melhor autoestima</h3>
+            <a id="btn-body-modal" class="button-tratamento">Saiba Mais</a>
+          </div>
+          <div class="tratamento-container">
+            <img src="images/capilar.jpg">
+            <h2 style="font-size: 22px; color: black; font-weight: 200; padding: 10px 10px 10px 0px;">Tratamento Capilar</h2>
+            <h3 style="font-size: 20px; color: black; font-weight: 200; padding-bottom: 25px;">Cuidados com a pele para uma melhor autoestima</h3>
+            <a id="btn-hair-modal" class="button-tratamento">Saiba Mais</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="equipe-div" class="container-clinic">
-    <div  class="content-clinic">
-      <h1 style="font-weight: 500;">EQUIPE</h1>
-      <div class="icone"></div>
-      <div style="margin: 30px; display: flex; justify-content: space-between;">
-        <div class="tratamento-container">
-          <img src="images/doctor.png" width="100%" height="80%" style="border-radius: 60%;">
-          <h2 style="color: white; font-weight: 500; padding: 10px;">DRA. TANIA</h2>
-          <h3 style="color: white; font-weight: 500; padding: 5px;">CRM 118885 - RQE 53459</h3>
-          <p style="color: white; font-weight: 500; padding: 10px; padding-bottom: 25px;">MÉDICA DERMATOLOGISTA ESPECIALIZADA EM PROCEDIMENTOS FACIAIS</p>
+  <div id="treatment" class="container-clinic">
+    <div class="content-clinic">
+      <div style="display: flex; flex-direction: column;">
+        <div style="align-self: center; text-align: center; width: 80%;">
+          <h1 style="font-size: 20px; font-weight: 500; color: rgb(73, 117, 50); margin-bottom: 25px;">Nosso Médicos</h1>
+          <div class="icone" style="margin: auto; background-color: rgb(73, 117, 50);"></div>
+          <h2 style="font-size: 40px; font-weight: 500;">Equipe</h2>
+          <p style="font-size: 22px; font-weight: 200;">Conheça nossa equipe de especialistas! Profissionais dedicados e qualificados para cuidar da sua beleza e saúde com excelência.</p>
         </div>
-        <div class="tratamento-container">
-          <img src="images/doctor2.jpeg" width="100%" height="80%" style="border-radius: 60%;">
-          <h2 style="color: white; font-weight: 500; padding: 10px;">DR. MARCOS ZANIN</h2>
-          <h3 style="color: white; font-weight: 500; padding: 5px;">CRM 118885 - RQE 53459</h3>
-          <p style="color: white; font-weight: 500; padding: 10px; padding-bottom: 25px;">MÉDICO DERMATOLOGISTA ESPECIALIZADA EM PROCEDIMENTOS CAPILARES</p>
+        <div style="margin: 30px; display: flex; justify-content: space-between;">
+          <div class="tratamento-container">
+            <img src="images/doctor1.jpg" style="border-radius: 80%;">
+            <h2 style="color: black; font-weight: 500;">DRA. TANIA</h2>
+            <h3 style="color: black; font-weight: 400;">CRM 118885 - RQE 53459</h3>
+            <p style="color: black; font-weight: 300; padding-bottom: 25px;">MÉDICA DERMATOLOGISTA ESPECIALIZADA EM PROCEDIMENTOS FACIAIS</p>
+          </div>
+          <div class="tratamento-container">
+            <img src="images/doctor2.jpg" style="border-radius: 80%;">
+            <h2 style="color: black; font-weight: 500; padding: 10px;">DR. MARCOS ZANIN</h2>
+            <h3 style="color: black; font-weight: 400; padding: 5px;">CRM 118885 - RQE 53459</h3>
+            <p style="color: black; font-weight: 300; padding: 10px; padding-bottom: 25px;">MÉDICO DERMATOLOGISTA ESPECIALIZADA EM PROCEDIMENTOS CAPILARES</p>
+          </div>
+          <div class="tratamento-container">
+            <img src="images/doctor3.jpg" style="border-radius: 60%;">
+            <h2 style="color: black; font-weight: 500; padding: 10px;">DRA. PAULA MELO</h2>
+            <h3 style="color: black; font-weight: 400; padding: 5px;">CRM 118885 - RQE 53459</h3>
+            <p style="color: black; font-weight: 300; padding: 10px; padding-bottom: 25px;">MÉDICA DERMATOLOGISTA ESPECIALIZADA EM PROCEDIMENTOS CORPORAIS</p>
+          </div>
         </div>
-        <div class="tratamento-container">
-          <img src="images/doctor3.jpeg" width="100%" height="80%" style="border-radius: 60%;">
-          <h2 style="color: white; font-weight: 500; padding: 10px;">DRA. PAULA MELO</h2>
-          <h3 style="color: white; font-weight: 500; padding: 5px;">CRM 118885 - RQE 53459</h3>
-          <p style="color: white; font-weight: 500; padding: 10px; padding-bottom: 25px;">MÉDICA DERMATOLOGISTA ESPECIALIZADA EM PROCEDIMENTOS CORPORAIS</p>
         </div>
-      </div>
     </div>
   </div>
 
-  <div id="contact-div" class="contact-clinic">
-    <div class="content-clinic" >
-      <h1 style="font-weight: 500;">CONTATO</h1>
-      <div class="icone"></div>
-      <div style="margin-bottom: 50px; border-radius: 20px; background-color: #94A97E; padding: 30px; box-sizing: border-box; display: flex; flex-direction: row;">
-        <div class="contato-container"> 
-          <h1 style="font-weight: 600">AGENDE SUA CONSULTA</h1>
-          <h2 style="font-weight: 200; width: 70%; align-self: center;">Entre em contato conosco para agendar sua consulta e garantir a sua saúde!</h2>
-          <div class="contact-info">
-            <i style="padding-right: 10px;" class="material-icons">call</i>
-            <h3 style="font-weight: 300; font-size: 20px;">(11) 3739-3972</h3>
-          </div>
-          <div class="contact-info">
-            <i style="padding-right: 10px;" class="material-icons">smartphone</i>
-            <h3 style="font-weight: 300; font-size: 20px;">(11) 99786-5404</h3>
-          </div>
-          <div class="contact-info">
-            <i style="padding-right: 10px;" class="material-icons">location_on</i>
-            <h3 style="font-weight: 300; font-size: 20px;">Alameda Gabriel Monteiro da Silva, 1500 - SP</h3>
-          </div>
+  <div id="contact-div" class="container-clinic" style="background-color:rgba(102, 165, 69, 0.2)">
+    <div class="content-clinic">
+      <div style="display: flex; flex-direction: column;">
+        <div style="align-self: center; text-align: center; width: 80%;">
+          <h1 style="font-size: 20px; font-weight: 500; color: rgb(73, 117, 50); margin-bottom: 25px;">Não Deixe Para Depois</h1>
+          <div class="icone" style="margin: auto; background-color: rgb(73, 117, 50);"></div>
+          <h2 style="font-size: 40px; font-weight: 500;">Contato</h2>
         </div>
-        <div class="mapacont">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8899099800356!2d-46.68460242301584!3d-23.572397078792374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5770445835c5%3A0xbdb1b4c54cb9d477!2sAlameda%20Gabriel%20Monteiro%20da%20Silva%2C%201500%20-%20Jardim%20America%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001442-002!5e0!3m2!1sen!2sbr!4v1714249021336!5m2!1sen!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div style="padding: 30px; display: flex; flex-direction: row;">
+          <div class="contato-container"> 
+            <h1 style="font-weight: 600; color: black;">AGENDE SUA CONSULTA</h1>
+            <h2 style="font-weight: 200; width: 100%; color: black;">Entre em contato conosco para agendar sua consulta e garantir a sua saúde!</h2>
+            <div class="contact-info">
+              <i style="padding-right: 10px; color: black;" class="material-icons">call</i>
+              <h3 style="font-weight: 300; font-size: 20px; color: black;">(11) 3739-3972</h3>
+            </div>
+            <div class="icone" style="margin: auto; background-color: rgb(73, 117, 50);"></div>
+            <div class="contact-info">
+              <i style="padding-right: 10px; color: black;" class="material-icons">smartphone</i>
+              <h3 style="font-weight: 300; font-size: 20px; color: black;">(11) 99786-5404</h3>
+            </div>
+            <div class="icone" style="margin: auto; background-color: rgb(73, 117, 50);"></div>
+            <div class="contact-info">
+              <i style="padding-right: 10px; color: black;" class="material-icons">location_on</i>
+              <h3 style="font-weight: 300; font-size: 20px; color: black;">Alameda Gabriel Monteiro da Silva, 1500 - SP</h3>
+            </div>
+          </div>
+          <div class="mapacont">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8899099800356!2d-46.68460242301584!3d-23.572397078792374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5770445835c5%3A0xbdb1b4c54cb9d477!2sAlameda%20Gabriel%20Monteiro%20da%20Silva%2C%201500%20-%20Jardim%20America%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001442-002!5e0!3m2!1sen!2sbr!4v1714249021336!5m2!1sen!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
     </div>
@@ -146,12 +165,11 @@
   <div id="facial-modal" class="modal">
     <div class="modal-content">
       <span class="close closeFacial">&times;</span>
-      <div id="clinica" class="container-clinic">
-        <div class="content-clinic">
+      <div id="clinica" class="container-clinic-modal">
+        <div class="content-clinic-modal">
           <h1 style="font-weight: 500;">TRATAMENTO FACIAL</h1>
-          <div class="icone"></div>
-          <div style="border-radius: 20px; background-color: #B6C398; padding: 30px; box-sizing: border-box;">
-            <p style="color: white; font-size: 22px; font-weight: 400;">
+          <div style="border-radius: 20px; background-color: rgba(102, 165, 69, 0.2); padding: 30px; box-sizing: border-box;">
+            <p style="color: black; font-size: 22px; font-weight: 300;">
               Em nossa clínica dermatológica, cada tratamento facial é uma jornada única, personalizada para atender às necessidades
               individuais da sua pele. Com uma combinação de tecnologia avançada, técnicas inovadoras e um profundo entendimento das
               complexidades dermatológicas, oferecemos um espectro completo de serviços para revitalizar, rejuvenescer e restaurar
@@ -188,12 +206,11 @@
   <div id="body-modal" class="modal">
     <div class="modal-content">
       <span class="close closeBody">&times;</span>
-      <div id="clinica" class="container-clinic">
-        <div class="content-clinic">
+      <div id="clinica" class="container-clinic-modal">
+        <div class="content-clinic-modal">
           <h1 style="font-weight: 500;">TRATAMENTO CORPORAL</h1>
-          <div class="icone"></div>
-          <div style="border-radius: 20px; background-color: #B6C398; padding: 30px; box-sizing: border-box;">
-            <p style="color: white; font-size: 22px; font-weight: 400;">
+          <div style="border-radius: 20px; background-color: rgba(102, 165, 69, 0.2); padding: 30px; box-sizing: border-box;">
+            <p style="color: black; font-size: 22px; font-weight: 300;">
               Em nossa clínica especializada, cada procedimento corporal é uma experiência singular, personalizada para atender às 
               necessidades específicas do seu corpo. Utilizando uma combinação de tecnologia de ponta, técnicas avançadas e um 
               profundo conhecimento das dinâmicas corporais, oferecemos uma ampla gama de serviços para esculpir, tonificar e 
@@ -221,7 +238,8 @@
               <img src="images/radio.jpg" width="100%" style="aspect-ratio: 1; object-fit: cover; border-radius: 10px;">
               <h2 style="color: black; font-weight: 500; padding: 10px;">RADIOFREQUENCIA </h2>
             </div>
-          </div>  
+          </div> 
+          <a href="login.html" class="button">Agende aqui</a> 
         </div>
       </div>
     </div>
@@ -230,12 +248,11 @@
   <div id="hair-modal" class="modal">
     <div class="modal-content">
       <span class="close closeHair">&times;</span>
-      <div id="clinica" class="container-clinic">
-        <div class="content-clinic">
+      <div id="clinica" class="container-clinic-modal">
+        <div class="content-clinic-modal">
           <h1 style="font-weight: 500;">TRATAMENTO CAPILAR</h1>
-          <div class="icone"></div>
-          <div style="border-radius: 20px; background-color: #B6C398; padding: 30px; box-sizing: border-box;">
-            <p style="color: white; font-size: 22px; font-weight: 400;">
+          <div style="border-radius: 20px; background-color: rgba(102, 165, 69, 0.2); padding: 30px; box-sizing: border-box;">
+            <p style="color: black; font-size: 22px; font-weight: 300;">
               Em nossa clínica de excelência, cada tratamento capilar é uma jornada exclusiva, desenhada para atender às 
               necessidades únicas do seu cabelo. Combinando tecnologia de última geração, técnicas refinadas e um entendimento 
               profundo da saúde capilar, oferecemos uma variedade de serviços para revitalizar, fortalecer e restaurar a vitalidade
@@ -259,14 +276,26 @@
               <h2 style="color: black; font-weight: 500; padding: 10px;">TERAPIA CAPILAR</h2>
             </div>
           </div>  
+          <a href="login.html" class="button">Agende aqui</a>
         </div>
       </div>
     </div>
   </div>
 
   <div class="navbarbaixo">
-    <p style="color: white;">2024 @ NEXT BY TANIA</p>
+    <div>
+      <a href="https://www.facebook.com/nextbytania" target="_blank"><img src="images/facebook_icon.png" alt="Facebook" style="width: 24px; height: 24px; margin-right: 5px;"></a>
+      <a href="https://www.instagram.com/nextbytania" target="_blank"><img src="images/Instagram_icon.png.webp" alt="Instagram" style="width: 24px; height: 24px; margin-right: 5px;"></a>
+      <a href="https://www.twitter.com/nextbytania" target="_blank"><img src="images/twitter_icon.png" alt="Twitter" style="width: 24px; height: 24px; margin-right: 5px;"></a>
+    </div>
+    <p style="color: white; font-size: 14px; margin-bottom: 10px;">&copy; 2024 Next by Tania. All rights reserved.</p>
+    <p style="color: white; font-size: 12px; margin-bottom: 10px;">
+      <a href="mailto:contact@nextbytania.com" style="color: #59cbe8; text-decoration: none;">Contact Us</a> | 
+      <a href="/about" style="color: #59cbe8; text-decoration: none;">About</a> | 
+      <a href="/privacy" style="color: #59cbe8; text-decoration: none;">Privacy Policy</a>
+    </p>
   </div>
+
 
 </body>
 </html>
